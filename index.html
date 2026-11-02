@@ -36,12 +36,14 @@
 <tr><td>نسخه پشتیبان تنظیمات و فهرست برنامه‌های خاموش‌شده</td><td>تلویزیون شما (<code>/data/local/tmp/tvdetox</code>)</td><td>برای دکمه «بازگردانی»</td></tr>
 <tr><td>کلید جفت‌کردن ریموت گوشی</td><td>تلویزیون و گوشی شما</td><td>تا فقط گوشی‌ای که کد QR را اسکن کرده تلویزیون را کنترل کند</td></tr>
 <tr><td>چیدمان صفحه اصلی، تصویر پس‌زمینه، جای فیلم‌ها</td><td>تلویزیون شما</td><td>تنظیمات شخصی صفحه اصلی</td></tr>
+<tr><td>گزارش پشتیبانی (مدل تلویزیون، برنامه‌های خاموش‌شده، وضعیت سلامت)</td><td>فقط وقتی خودتان «ارسال گزارش» را بزنید، به هر جا که خودتان انتخاب کنید</td><td>برای کمک به شما؛ پیش از ارسال کامل می‌بینیدش</td></tr>
 <tr><td>رسید خرید نسخه کامل (همان رسیدی که کافه‌بازار یا مایکت می‌دهد) و تاریخ شروع دوره آزمایشی</td><td>گوشی و تلویزیون شما</td><td>تا نسخه کامل روی تلویزیون فعال شود</td></tr>
 </table>
 <p>با حذف برنامه، این اطلاعات از گوشی پاک می‌شوند. نسخه پشتیبان روی تلویزیون عمداً می‌ماند تا بتوانید هر وقت خواستید تغییرات را برگردانید.</p>
 
 <h2>۳. ارتباط با اینترنت</h2>
 <p>برای نمایش «وضعیت اینترنت» روی تلویزیون، برنامه فقط بررسی می‌کند این سه نشانی عمومی باز می‌شوند یا نه، و چیزی برایشان نمی‌فرستد: <span dir="ltr">www.aparat.com</span>، <span dir="ltr">www.gstatic.com</span>، <span dir="ltr">www.youtube.com</span>.</p>
+<p>برنامه گوشی هر بار که باز می‌شود، فهرست به‌روز برنامه‌های اضافه را (یک فایل متنی کوچک و امضاشده) از <span dir="ltr">raw.githubusercontent.com</span> یا <span dir="ltr">raw.githack.com</span> می‌خواند. در این درخواست هیچ اطلاعاتی از شما یا تلویزیون فرستاده نمی‌شود.</p>
 <p>خرید نسخه کامل کاملاً در کافه‌بازار یا مایکت انجام می‌شود؛ این برنامه هیچ اطلاعات پرداخت یا حسابی نمی‌بیند و فقط رسید امضاشده خرید را روی دستگاه‌های خودتان بررسی می‌کند.</p>
 <p>اگر خودتان یک DNS (مثل Vanilla، Google یا Cloudflare) انتخاب کنید، تلویزیون نام سایت‌ها را از آن DNS می‌پرسد؛ این تنظیم خود اندروید است و با یک دکمه برمی‌گردد.</p>
 
@@ -83,10 +85,11 @@
 <tr><td>Backup of settings and the list of apps turned off</td><td>TV (<code>/data/local/tmp/tvdetox</code>)</td><td>For Restore</td></tr>
 <tr><td>Phone-remote pairing key</td><td>TV and phone</td><td>Only a phone that scanned the TV's QR code can control it</td></tr>
 <tr><td>Home screen layout, wallpaper, movie positions</td><td>TV</td><td>Your home screen settings</td></tr>
+<tr><td>Support report (TV model, apps turned off, health)</td><td>Only when you tap "Send a report", to wherever you choose</td><td>To help you; you see it all before sending</td></tr>
 <tr><td>The full-version receipt (as Cafe Bazaar or Myket issues it) and the trial start date</td><td>Phone and TV</td><td>To turn the full version on for the TV</td></tr>
 </table>
 <h2>Internet</h2>
-<p>For the TV's internet-status dots the app only checks whether three public addresses open (www.aparat.com, www.gstatic.com, www.youtube.com), sending them nothing. A DNS you choose yourself is an Android setting, undone with one button. Buying the full version happens entirely in Cafe Bazaar or Myket: the app sees no payment or account details, only the store's signed receipt, which it checks on your own devices.</p>
+<p>For the TV's internet-status dots the app only checks whether three public addresses open (www.aparat.com, www.gstatic.com, www.youtube.com), sending them nothing. A DNS you choose yourself is an Android setting, undone with one button. Each time it opens, the phone app reads the updated app list (a small signed text file) from raw.githubusercontent.com or raw.githack.com, sending nothing about you or the TV. Buying the full version happens entirely in Cafe Bazaar or Myket: the app sees no payment or account details, only the store's signed receipt, which it checks on your own devices.</p>
 <h2>Permissions</h2>
 <p>Network and Wi-Fi: finding the TV, the phone remote, internet status. Accessibility service "Phone remote" (TV only, only if you turn it on): lets the phone's buttons and touchpad act on the TV; screen text is never stored or sent. Screen capture and RECORD_AUDIO: only to show the TV's picture and sound on your own paired phone when you open TV → Phone; nothing is recorded or saved, and the physical microphone is not used (Android requires this permission to capture the TV's own sound). Kill background processes: Free memory and the nightly cleanup. Boot completed and wake lock: the 4 AM cleanup. Write secure settings (only if granted during setup): choosing a DNS. Request delete packages: the Uninstall item, which Android confirms with you.</p>
 <h2>ADB</h2>

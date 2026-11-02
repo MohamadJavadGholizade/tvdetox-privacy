@@ -1,0 +1,3 @@
+# TV Detox: the cleanup's app list, read by the phone app (SafeList). Signed: list.txt.sig.
+# Only adds to what's built into the app; the app's own safety checks always apply.
+version 1
